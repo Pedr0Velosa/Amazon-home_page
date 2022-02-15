@@ -1,0 +1,144 @@
+//general styles 
+
+.navbar{
+    color:var(--clr-white);
+    font-family: 300;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.row{
+    flex-direction: row;
+}
+.gap{
+    gap: 0 2rem;
+}
+.strech{
+    align-items: stretch;
+}
+
+//top-nav style
+.top-nav{
+    background-color: var(--bg-dk-blue);
+    padding: .75rem 1rem;
+    font-size: .8em;
+}
+
+.logo{
+    font-size: 1.5em;
+}
+
+.translate{
+    transform: translate(-1.6ch);
+}
+
+//search bar style
+
+    .todos{
+        color:var(--clr-grey);
+        font-size: .9em;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: var(--bg-grey);
+        padding: .5rem;
+        -moz-appearance: none;
+        text-overflow: '';
+        
+        &:hover{
+            background-color: var(--bg-hover-grey);
+        }
+    }
+
+    input{
+        border-width: 0 0 0 1px;
+    }
+    button{
+        background-color: var(--bg-yellow);
+        border: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: .5rem;
+        font-size: 1.1rem;
+    
+        &:hover{
+            background-color: var(--bg-hover-yellow);
+        }
+    }
+
+//under-nav style
+
+.under-nav{
+    background-color: var(--bg-lg-blue);
+    padding: 0.125rem 1rem;
+    font-size: .8rem;
+    font-weight: 700;
+
+    li:first-child{
+        font-weight: 800;
+    }
+
+    li{
+        border: 1px solid transparent;
+        align-self: stretch;
+        padding: 0 2px;
+    }
+    li:last-child{
+        margin-left: auto;
+    }
+
+    li:hover:nth-child(odd){
+        border: 1px solid var(--clr-white);
+    }
+
+    img{
+        height: 2.5em;
+    }
+
+}
+
+.burger-selector{
+    width: 20px;
+    height: 14px;
+    border-bottom: 2px solid var(--clr-white);
+    border-top: 2px solid var(--clr-white);
+    display: inline-block;
+    position: relative;
+    margin-inline-end: 5px;
+
+    &::after{
+        content: "";
+        border-top: 2px solid var(--clr-white);
+        padding:1px 10px;
+        position: absolute;
+        top: 4px;
+        left: 0;
+    }
+}
+
+.middle-under-nav{
+    a,
+    select{
+        border: 1px solid transparent;
+        padding: 0 4px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    a:hover,
+    select:hover{
+        border: 1px solid var(--clr-white);
+    }
+
+    
+
+}
+
+.prime{
+    background-color: var(--bg-lg-blue);
+    color: var(--clr-white);
+    font-weight: 700;
+    cursor: pointer;
+}
